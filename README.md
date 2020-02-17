@@ -1,5 +1,5 @@
 # Firewall-Rules
-Basic Firewall Rules implemented in Prolog for partial fulfilment of CS F214 (Logic in Computer Science)
+Basic Firewall Rules implemented in Prolog for partial fulfilment of CS F214 (Logic in Computer Science)  
 This is Prolog knowledge base for Problem 1 - Firewall Rules made by Akshit Khanna (2017A7PS0023P) and Naman singhal(2017A7PS0181P) .
 
 ## Problem Statement
