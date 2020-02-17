@@ -1,0 +1,46 @@
+********************Sample Inputs with corresponding Outputs ****************************
+
+?- packetFirewall('H',221,arp,'172.17.35.17','172.17.52.23',321,1600).
+ Packet Rejected 
+true .
+
+?- packetFirewall('B',470,pppoe,'172.17.35.87','172.17.52.72',578,1999).
+ Packet Accepted 
+true .
+
+?- packetFirewall('H',221,arp,'172.17.35.17','172.17.52.23',771,2357).
+ Packet Rejected 
+true .
+
+?- packetFirewall('B',470,pppoe,'172.17.35.87','172.17.52.72',978,2956).
+ Packet Accepted 
+true .
+
+?- packetFirewall('B',470,sna,'172.17.35.87','172.17.52.72',978,2956).
+ Packet Accepted 
+true .
+
+?- packetFirewall('B',470,mpls,'172.17.35.87','172.17.52.72',978,2956).
+false.
+
+?- packetFirewall('Z',470,mpls,'172.17.35.87','172.17.52.72',978,2956).
+false.
+
+?- packetFirewall('P',389,mpls,'172.17.35.29','172.17.52.48',429,1800).
+false.
+
+?- packetFirewall('P',389,mpls,'172.17.35.29','172.17.52.48',851,2678).
+false.
+
+?- packetFirewall('P',389,netbui,'172.17.35.29','172.17.52.48',851,2678).
+false.
+
+?- packetFirewall('H',221,ipx,'172.17.35.17','172.17.52.23',300,1671).
+ Packet Rejected 
+true .
+
+?- packetFirewall('H',221,ipx,'172.17.35.17','172.17.52.23',300,2300).
+false.
+
+*****************************************************************************************
+
